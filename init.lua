@@ -1068,9 +1068,8 @@ require("lazy").setup({
 	},
 	{
 		"mbbill/undotree",
-		config = function()
-			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle["Undo Tree"])
-		end,
+		config = function() end,
+		vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle),
 	},
 	{
 		"tpope/vim-fugitive",
