@@ -938,6 +938,9 @@ require("lazy").setup({
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
 			vim.cmd.colorscheme("tokyonight-moon")
+			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+			--vim.api.nvim_set_hl(0, "LineNr", {fg = "#bb9af7", bg = "none" })
 		end,
 	},
 
